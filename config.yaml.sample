@@ -1,0 +1,23 @@
+servicename: billing-srv
+hostport: localhost:17777
+#tls:
+#  cert: certificate.file
+#  key: key.file
+#insecure: false
+workstyle:
+  outputpath: /home/cezar/local-services/billing-srv/out
+  customtext: INSURANCE INVOICE
+  # for customcolor use HEX color value prefixed with /
+  customcolor: /#85C2EB
+  logopath:  /home/cezar/local-services/billing-srv/resources/ledgertech_logo1.png
+  logourl: https://ledgertech.com/
+  watermarkpath:  /home/cezar/local-services/billing-srv/resources/ledgertech_icon1.png
+  lang: en-EN
+log:
+  console: true
+  file: /home/cezar/local-services/billing-srv/log/billing-srv.log
+  maxAge: 3
+  maxBackups: 5
+metrics:
+  enabled: true
+  endpoint: /metrics
